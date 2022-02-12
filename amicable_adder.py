@@ -1,14 +1,18 @@
-def d(n:int) -> int:
+
+def sum_amicables(max):
+  
+  
+  def d(n:int) -> int:
   # makes the sum of proper divisors of n (numbers less than n which divide evenly into n)
     top = int(n/2) # since the biggest integer divisor of a number is its half.
-    sum = 0
+    result = 0
     for i in range(1,top+1):
         if n%i == 0: 
             # evaluates if the rest of the division is zero
-            sum +=i
-    return sum
-
-def sum_amicables(max):
+            result +=i
+    return result
+  
+  # here starts the code to perform the sum of all amicable numbers lower than a paramm
     sum = 0
     for n1 in range(2, max+1):
         # includes the max in the for loop

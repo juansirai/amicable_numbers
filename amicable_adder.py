@@ -22,4 +22,4 @@ def sum_amicables(max):
                 sum = sum + n1 + n2
     return sum
 
-print(sum_amicables(10000))
+

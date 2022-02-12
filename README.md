@@ -13,10 +13,10 @@ No installation requiered. Copy the amicable_adder.py in your project folder.
 ## Usage
 
 ```python
-import amicable_adder
+from amicable_adder import sum_amicables
 
 # returns the sum of all amicable adders less than 10.000
-amicable_adder(1000)
+sum_amicables(1000)
 ```
 
 ## Contributing
